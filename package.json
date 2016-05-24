@@ -1,0 +1,17 @@
+{
+  "name": "check-installed-dependencies",
+  "version": "0.0.0",
+  "description": "Check if the currently installed packages match package.json",
+  "main": "index.js",
+  "bin": "cli.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cross-spawn": "^3.0.1",
+    "lodash.startswith": "^4.1.0",
+    "meow": "^3.7.0",
+    "pkg-dir": "^1.0.0",
+    "read-package-json": "^2.0.4",
+    "semver": "^5.1.0"
+  }
+}
