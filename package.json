@@ -1,6 +1,6 @@
 {
   "name": "check-installed-dependencies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if the currently installed packages match package.json",
   "main": "index.js",
   "bin": "cli.js",
