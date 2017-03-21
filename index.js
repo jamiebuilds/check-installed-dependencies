@@ -30,10 +30,10 @@ function getOutdatedData(cwd, cb) {
   });
 
   outdated.on('exit', function(code) {
-    if (code !== 0) {
-      cb(new Error('npm outdated exited with ' + code));
-    } else {
+    try {
       cb(null, data ? JSON.parse(data) : {});
+    } catch (err) {
+      cb(new Error('`npm outdated --json --long` output invalid JSON. stdout: \n\n' + data));
     }
   });
 }
